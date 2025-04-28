@@ -29,12 +29,24 @@
 
     <div class="nav-links">
         <a href="#about-section" class="active"><i class="fas fa-user"></i> About Me</a>
+<!--        <a href="#"><i class="fas fa-laptop-code"></i> Portfolio</a>-->
+        <!--        <a href="#"><i class="fas fa-briefcase"></i> Services & Pricing</a>-->
         <a href="https://www.linkedin.com/in/himanshu-verma-822a07286/overlay/1745775757163/single-media-viewer/?profileId=ACoAAEWPi9oBlA3t840vbxhBCHkrnql57JPhuIE"><i class="fas fa-file-alt"></i> Resume</a>
+<!--        <a href="#"><i class="fas fa-blog"></i> Blog</a>-->
         <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+<!--        <a href="#"><i class="fas fa-cogs"></i> More Pages</a>-->
         <a href="#open-source">
             <i class="fas fa-code"></i> Open Source Contributions
         </a>
+
     </div>
+
+<!--    <div class="hire-me-btn">-->
+<!--        <a href="#contact">-->
+<!--            <button><i class="fas fa-paper-plane"></i>Hire Me</button>-->
+<!--        </a>-->
+<!--    </div>-->
+
 
     <div class="dark-mode-toggle">
         <p><i class="fas fa-moon"></i> Dark Mode</p>
@@ -48,7 +60,9 @@
 
 <div class="main-content">
     <section id="about-section" class="about-section">
+<!--        <h3 style="text-align: center; color: #20c997;">🚀 Software Engineer @ Acceldata | Big Data & Cloud Enthusiast | Open-Source Contributor</h3>-->
         <h3 id="dynamic-text" style="text-align: center; color: #20c997; font-weight: 600;"></h3>
+<!--        <script src="script.js"></script>-->
         <h2>📈 About Me</h2>
         <p>
             I'm a passionate Software Engineer specializing in <strong>Big Data Systems</strong>, <strong>Cloud Infrastructure</strong>, and <strong>Distributed Architectures</strong>.<br>
@@ -80,46 +94,51 @@
         <div class="skills-section">
             <h3>What I do</h3>
             <div class="skills-grid">
-                <div class="skill-card">
-                    <i class="fas fa-database"></i>
-                    <h4>Big Data Engineering</h4>
-                    <p>Building scalable data pipelines using Hadoop, Apache Spark, Apache Airflow, and ETL frameworks for large-scale data ingestion and processing.</p>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <i class="fas fa-database"></i>
+                        <h4>Big Data Engineering</h4>
+                        <p>Building scalable data pipelines using Hadoop, Apache Spark, Apache Airflow, and ETL frameworks for large-scale data ingestion and processing.</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-network-wired"></i>
+                        <h4>Distributed Systems</h4>
+                        <p>Working with distributed technologies like Apache Pinot, Apache Hive, Kafka, and Elasticsearch to enable real-time analytics and reliable data storage.</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-cloud"></i>
+                        <h4>Cloud Infrastructure & DevOps</h4>
+                        <p>Deploying and managing cloud-based platforms (AWS) and automating workflows with Jenkins, Docker, and CI/CD pipelines for reliable software releases.</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-code"></i>
+                        <h4>Software Development</h4>
+                        <p>Building backend utilities and automation scripts in Python, JavaScript, and C++, focusing on system integrations, testing, and workflow orchestration.</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-laptop-code"></i>
+                        <h4>Site Reliability Engineering (SRE)</h4>
+                        <p>Ensuring system stability, automating operations, managing incident response, and maintaining high availability for data platforms and cloud services.</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-robot"></i>
+                        <h4>Machine Learning & NLP</h4>
+                        <p>Developing ML models for text summarization, classification, and question generation using frameworks like PyTorch, Scikit-learn, and Transformer models.</p>
+                    </div>
+                    <!-- New Card: Hadoop Component Testing -->
+                    <div class="skill-card">
+                        <i class="fas fa-vial"></i> <!-- Using a "test" related icon -->
+                        <h4>Hadoop Component Testing</h4>
+                        <p>Designing, automating, and executing validation tests for Hadoop ecosystem components to ensure reliability, scalability, and robustness of distributed data platforms.</p>
+                    </div>
+                    <!-- New Card: Open Source Contributor -->
+                    <div class="skill-card">
+                        <i class="fas fa-users"></i> <!-- Using a "community" related icon -->
+                        <h4>Open Source Contributions</h4>
+                        <p>Contributing actively to open-source projects, improving data engineering, cloud computing, and machine learning ecosystems while collaborating with global developer communities.</p>
+                    </div>
                 </div>
-                <div class="skill-card">
-                    <i class="fas fa-network-wired"></i>
-                    <h4>Distributed Systems</h4>
-                    <p>Working with distributed technologies like Apache Pinot, Apache Hive, Kafka, and Elasticsearch to enable real-time analytics and reliable data storage.</p>
-                </div>
-                <div class="skill-card">
-                    <i class="fas fa-cloud"></i>
-                    <h4>Cloud Infrastructure & DevOps</h4>
-                    <p>Deploying and managing cloud-based platforms (AWS) and automating workflows with Jenkins, Docker, and CI/CD pipelines for reliable software releases.</p>
-                </div>
-                <div class="skill-card">
-                    <i class="fas fa-code"></i>
-                    <h4>Software Development</h4>
-                    <p>Building backend utilities and automation scripts in Python, JavaScript, and C++, focusing on system integrations, testing, and workflow orchestration.</p>
-                </div>
-                <div class="skill-card">
-                    <i class="fas fa-laptop-code"></i>
-                    <h4>Site Reliability Engineering (SRE)</h4>
-                    <p>Ensuring system stability, automating operations, managing incident response, and maintaining high availability for data platforms and cloud services.</p>
-                </div>
-                <div class="skill-card">
-                    <i class="fas fa-robot"></i>
-                    <h4>Machine Learning & NLP</h4>
-                    <p>Developing ML models for text summarization, classification, and question generation using frameworks like PyTorch, Scikit-learn, and Transformer models.</p>
-                </div>
-                <div class="skill-card">
-                    <i class="fas fa-vial"></i>
-                    <h4>Hadoop Component Testing</h4>
-                    <p>Designing, automating, and executing validation tests for Hadoop ecosystem components to ensure reliability, scalability, and robustness of distributed data platforms.</p>
-                </div>
-                <div class="skill-card">
-                    <i class="fas fa-users"></i>
-                    <h4>Open Source Contributions</h4>
-                    <p>Contributing actively to open-source projects, improving data engineering, cloud computing, and machine learning ecosystems while collaborating with global developer communities.</p>
-                </div>
+
             </div>
         </div>
 
@@ -155,6 +174,7 @@
             <p><a href="https://github.com/apache/ambari/pull/3835" target="_blank">PR #3835</a> - Description of the contribution here.</p>
         </div>
     </div>
+
 
 </div>
 
