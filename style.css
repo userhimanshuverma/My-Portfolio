@@ -86,6 +86,7 @@ body {
     font-size: 15px;
     opacity: 0.9;
     transition: 0.3s;
+
 }
 
 .nav-links a i {
@@ -102,6 +103,7 @@ body {
 .hire-me-btn {
     width: 100%;
     margin-top: 20px;
+
 }
 
 .hire-me-btn button {
@@ -118,6 +120,7 @@ body {
     gap: 8px;
     font-size: 16px;
     transition: 0.3s;
+
 }
 
 .hire-me-btn button:hover {
@@ -200,6 +203,9 @@ body.dark-mode .contact-card {
     color: #e0e0e0;
 }
 
+/* Other dark mode adjustments (buttons, cards, etc.) if needed */
+
+
 .switch {
     position: relative;
     display: inline-block;
@@ -246,6 +252,7 @@ input:checked + .slider:before {
     transform: translateX(24px);
 }
 
+
 body {
     font-family: 'Poppins', sans-serif;
     background: linear-gradient(to right, #f8f9fa, #eef1f5);
@@ -268,7 +275,7 @@ body {
     box-shadow: 0 10px 20px rgba(0,0,0,0.05);
     max-width: 1200px;
     margin: auto;
-    margin-bottom: 50px;
+    margin-bottom: 50 px;
 }
 
 .about-section h1 {
@@ -451,8 +458,10 @@ body {
     transform: translateY(1px);
 }
 
+
 /* Contact Section Styles */
 .contact-section {
+
     text-align: center;
     padding: 60px 20px;
     animation: fadeInUp 1s ease forwards;
@@ -594,91 +603,4 @@ body.dark-mode .contribution-card a {
 
 body.dark-mode .contribution-card a:hover {
     color: #17a589; /* Keep hover color in dark mode */
-}
-
-/* Responsive Design */
-@media screen and (max-width: 768px) {
-    .sidebar {
-        width: 200px;
-        padding: 15px;
-    }
-
-    .main-content {
-        margin-left: 0;
-        padding: 20px;
-    }
-
-    .profile img {
-        width: 90px;
-        height: 90px;
-    }
-
-    .social-icons {
-        gap: 10px;
-    }
-
-    .nav-links a {
-        font-size: 14px;
-        padding: 8px 12px;
-    }
-
-    .hire-me-btn button {
-        font-size: 14px;
-        padding: 10px;
-    }
-
-    .skills-grid {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    }
-
-    .publications-cards {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    }
-
-    .contact-cards {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .contact-card {
-        width: 100%;
-    }
-
-    .open-source-section {
-        padding: 30px 20px;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .sidebar {
-        width: 160px;
-    }
-
-    .profile img {
-        width: 80px;
-        height: 80px;
-    }
-
-    .social-icons a {
-        width: 35px;
-        height: 35px;
-    }
-
-    .nav-links a {
-        font-size: 12px;
-        padding: 8px;
-    }
-
-    .hire-me-btn button {
-        font-size: 14px;
-        padding: 8px;
-    }
-
-    .skills-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .publications-cards {
-        grid-template-columns: 1fr;
-    }
 }
