@@ -1,11 +1,10 @@
 document.addEventListener('DOMContentLoaded', function() {
     const darkModeToggle = document.getElementById('darkModeToggle');
     const sidebar = document.querySelector('.sidebar');
-    const body = document.body;
 
     // Check for saved dark mode preference
     if (localStorage.getItem('darkMode') === 'enabled') {
-        body.classList.add('dark-mode');
+        document.body.classList.add('dark-mode');
         if (sidebar) {
             sidebar.classList.add('dark-mode');
         }
@@ -18,11 +17,11 @@ document.addEventListener('DOMContentLoaded', function() {
     if (darkModeToggle) {
         darkModeToggle.addEventListener('change', function() {
             if (this.checked) {
-                body.classList.add('dark-mode');
+                document.body.classList.add('dark-mode');
                 if (sidebar) sidebar.classList.add('dark-mode');
                 localStorage.setItem('darkMode', 'enabled');
             } else {
-                body.classList.remove('dark-mode');
+                document.body.classList.remove('dark-mode');
                 if (sidebar) sidebar.classList.remove('dark-mode');
                 localStorage.setItem('darkMode', 'disabled');
             }
@@ -63,36 +62,4 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     type(); // Start typing effect after DOM loaded
-
-    // Responsive Sidebar Toggle for Mobile View
-    const sidebarToggle = document.getElementById('sidebarToggle');
-    if (sidebarToggle) {
-        sidebarToggle.addEventListener('click', function() {
-            if (sidebar) {
-                sidebar.classList.toggle('active');
-            }
-        });
-    }
-
-    // Adjust layout for small screens
-    function adjustLayoutForSmallScreens() {
-        if (window.innerWidth <= 768) {
-            // Mobile view: Sidebar hidden by default, toggle visibility
-            if (sidebar) {
-                sidebar.style.display = 'none';
-            }
-            body.classList.add('mobile-view');
-        } else {
-            // Desktop view: Sidebar always visible
-            if (sidebar) {
-                sidebar.style.display = 'block';
-            }
-            body.classList.remove('mobile-view');
-        }
-    }
-
-    // Call the function on load and window resize
-    adjustLayoutForSmallScreens();
-    window.addEventListener('resize', adjustLayoutForSmallScreens);
-
 });
