@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Sidebar</title>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="sidebar">
+    <div class="profile">
+        <h2>Himanshu Verma</h2>
+        <img src="profile1.jpg" alt="Profile">
+        <p>Welcome!</p>
+    </div>
+
+    <div class="social-icons">
+        <a href="https://www.linkedin.com/in/himanshu-verma-822a07286/"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/userhimanshuverma"><i class="fab fa-github"></i></a>
+    </div>
+
+    <div class="nav-links">
+        <a href="#about-section" class="active"><i class="fas fa-user"></i> About Me</a>
+<!--        <a href="#"><i class="fas fa-laptop-code"></i> Portfolio</a>-->
+        <!--        <a href="#"><i class="fas fa-briefcase"></i> Services & Pricing</a>-->
+        <a href="https://www.linkedin.com/in/himanshu-verma-822a07286/overlay/1745775757163/single-media-viewer/?profileId=ACoAAEWPi9oBlA3t840vbxhBCHkrnql57JPhuIE"><i class="fas fa-file-alt"></i> Resume</a>
+<!--        <a href="#"><i class="fas fa-blog"></i> Blog</a>-->
+        <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+<!--        <a href="#"><i class="fas fa-cogs"></i> More Pages</a>-->
+        <a href="#open-source">
+            <i class="fas fa-code"></i> Open Source Contributions
+        </a>
+
+    </div>
+
+<!--    <div class="hire-me-btn">-->
+<!--        <a href="#contact">-->
+<!--            <button><i class="fas fa-paper-plane"></i>Hire Me</button>-->
+<!--        </a>-->
+<!--    </div>-->
+
+
+    <div class="dark-mode-toggle">
+        <p><i class="fas fa-moon"></i> Dark Mode</p>
+        <label class="switch">
+            <input type="checkbox" id="darkModeToggle">
+            <span class="slider"></span>
+        </label>
+    </div>
+
+</div>
+
+<div class="main-content">
+    <section id="about-section" class="about-section">
+<!--        <h3 style="text-align: center; color: #20c997;">🚀 Software Engineer @ Acceldata | Big Data & Cloud Enthusiast | Open-Source Contributor</h3>-->
+        <h3 id="dynamic-text" style="text-align: center; color: #20c997; font-weight: 600;"></h3>
+<!--        <script src="script.js"></script>-->
+        <h2>📈 About Me</h2>
+        <p>
+            I'm a passionate Software Engineer specializing in <strong>Big Data Systems</strong>, <strong>Cloud Infrastructure</strong>, and <strong>Distributed Architectures</strong>.<br>
+            At Acceldata, I design and implement <strong>scalable, data-driven platforms</strong>, automate <strong>complex workflows</strong>, and contribute actively to <strong>open-source projects</strong>.
+        </p>
+        <p>
+            My work is deeply rooted in the <strong>Hadoop ecosystem</strong>, <strong>Apache Pinot</strong>, <strong>Airflow</strong>, <strong>MLflow</strong>, and modern <strong>cloud-native</strong> technologies.<br>
+            I thrive on building solutions that are <strong>resilient</strong>, <strong>efficient</strong>, and <strong>impactful</strong> at scale.
+        </p>
+
+        <hr style="margin: 20px 0;">
+
+        <section id="publications">
+            <h2>📚 Publications</h2>
+            <div class="publications-cards">
+                <div class="publication-card">
+                    <h4>Automated Summarization and Question Generation for Efficient Information Extraction</h4>
+                    <p><a href="https://ieeexplore.ieee.org/document/10716103" target="_blank" class="publication-link">Read Paper</a></p>
+                </div>
+                <div class="publication-card">
+                    <h4>Enhanced Brain Region Detection Using Total Variation Denoising and Semantic Segmentation</h4>
+                    <p><a href="https://www.linkedin.com/posts/himanshu-verma-822a07286_im-happy-to-share-that-my-research-paper-activity-7315104012666576896-kfMe?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEWPi9oBlA3t840vbxhBCHkrnql57JPhuIE" target="_blank" class="publication-link">Read Paper</a></p>
+                </div>
+            </div>
+        </section>
+
+        <hr style="margin: 20px 0;">
+
+        <div class="skills-section">
+            <h3>What I do</h3>
+            <div class="skills-grid">
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <i class="fas fa-database"></i>
+                        <h4>Big Data Engineering</h4>
+                        <p>Building scalable data pipelines using Hadoop, Apache Spark, Apache Airflow, and ETL frameworks for large-scale data ingestion and processing.</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-network-wired"></i>
+                        <h4>Distributed Systems</h4>
+                        <p>Working with distributed technologies like Apache Pinot, Apache Hive, Kafka, and Elasticsearch to enable real-time analytics and reliable data storage.</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-cloud"></i>
+                        <h4>Cloud Infrastructure & DevOps</h4>
+                        <p>Deploying and managing cloud-based platforms (AWS) and automating workflows with Jenkins, Docker, and CI/CD pipelines for reliable software releases.</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-code"></i>
+                        <h4>Software Development</h4>
+                        <p>Building backend utilities and automation scripts in Python, JavaScript, and C++, focusing on system integrations, testing, and workflow orchestration.</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-laptop-code"></i>
+                        <h4>Site Reliability Engineering (SRE)</h4>
+                        <p>Ensuring system stability, automating operations, managing incident response, and maintaining high availability for data platforms and cloud services.</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-robot"></i>
+                        <h4>Machine Learning & NLP</h4>
+                        <p>Developing ML models for text summarization, classification, and question generation using frameworks like PyTorch, Scikit-learn, and Transformer models.</p>
+                    </div>
+                    <!-- New Card: Hadoop Component Testing -->
+                    <div class="skill-card">
+                        <i class="fas fa-vial"></i> <!-- Using a "test" related icon -->
+                        <h4>Hadoop Component Testing</h4>
+                        <p>Designing, automating, and executing validation tests for Hadoop ecosystem components to ensure reliability, scalability, and robustness of distributed data platforms.</p>
+                    </div>
+                    <!-- New Card: Open Source Contributor -->
+                    <div class="skill-card">
+                        <i class="fas fa-users"></i> <!-- Using a "community" related icon -->
+                        <h4>Open Source Contributions</h4>
+                        <p>Contributing actively to open-source projects, improving data engineering, cloud computing, and machine learning ecosystems while collaborating with global developer communities.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2>📞 Get In Touch</h2>
+        <div class="contact-cards">
+            <div class="contact-card">
+                <i class="fas fa-phone"></i>
+                <h4>Phone</h4>
+                <p><a href="tel:9839572727">+91 98395 72727</a></p>
+            </div>
+            <div class="contact-card">
+                <i class="fas fa-envelope"></i>
+                <h4>Email</h4>
+                <p><a href="mailto:sunny.verma.mh@gmail.com">sunny.verma.mh@gmail.com</a></p>
+            </div>
+        </div>
+    </section>
+
+    <div class="open-source-section" id="open-source">
+        <h2>Open Source Contributions</h2>
+        <p>Here are some of my contributions to open source projects:</p>
+
+        <div class="contribution-card">
+            <h3>Apache Pinot</h3>
+            <p><a href="https://github.com/apache/pinot/pull/15596" target="_blank">PR #15596</a> - Description of the contribution here.</p>
+        </div>
+
+        <div class="contribution-card">
+            <h3>Apache Ambari</h3>
+            <p><a href="https://github.com/apache/ambari/pull/3835" target="_blank">PR #3835</a> - Description of the contribution here.</p>
+        </div>
+    </div>
+
+
+</div>
+
+<!-- External JavaScript -->
+<script src="script.js"></script>
+
+</body>
+</html>
